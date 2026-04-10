@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas PRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Minhas Tarefas</h1>
+
+  <div class="input-area">
+    <input type="text" id="inputTarefa" placeholder="Digite uma tarefa...">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+  </div>
+
+  <div class="filtros">
+    <button onclick="filtrar('todas')">Todas</button>
+    <button onclick="filtrar('ativas')">Pendentes</button>
+    <button onclick="filtrar('concluidas')">Concluídas</button>
+  </div>
+
+  <ul id="lista"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
